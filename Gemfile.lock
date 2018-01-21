@@ -1,0 +1,79 @@
+PATH
+  remote: .
+  specs:
+    electrum_rpc_json_client (0.1.0)
+      dry-initializer
+      rpcjson
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (5.1.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    byebug (9.1.0)
+    coderay (1.1.2)
+    concurrent-ruby (1.0.5)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    diff-lcs (1.3)
+    dry-initializer (2.3.0)
+    hashdiff (0.3.7)
+    i18n (0.9.1)
+      concurrent-ruby (~> 1.0)
+    json (2.1.0)
+    method_source (0.9.0)
+    minitest (5.11.1)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-byebug (3.5.1)
+      byebug (~> 9.1)
+      pry (~> 0.10)
+    public_suffix (3.0.1)
+    rake (10.5.0)
+    rpcjson (0.0.2)
+      json (> 0.0)
+      json
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.0)
+    safe_yaml (1.0.4)
+    thread_safe (0.3.6)
+    tzinfo (1.2.4)
+      thread_safe (~> 0.1)
+    vcr (4.0.0)
+    webmock (3.3.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  bundler (~> 1.16)
+  electrum_rpc_json_client!
+  pry-byebug
+  rake (~> 10.0)
+  rspec (~> 3.0)
+  vcr
+  webmock
+
+BUNDLED WITH
+   1.16.0

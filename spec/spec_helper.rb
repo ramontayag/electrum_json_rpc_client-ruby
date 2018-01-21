@@ -1,5 +1,19 @@
 require "bundler/setup"
 require "electrum_rpc_json_client"
+require "pry-byebug"
+require "active_support/core_ext/hash/indifferent_access"
+require "active_support/core_ext/object/blank"
+require 'vcr'
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+end
+
+CONFIG = {
+  host: "http://electrum:electrumpass@localhost:7000",
+}
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

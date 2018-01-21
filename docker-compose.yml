@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  electrum:
+    image: ramontayag/electrum-client-daemon:all_features
+    ports:
+      - "7000:7000"
+    environment:
+      ELECTRUM_USER: electrum
+      ELECTRUM_PASSWORD: electrumpass
+      ELECTRUM_MASTER_PRIVATE_KEY: xprv9s21ZrQH143K2qhNXjGPHr6Rdz3h2N5dnt4sFspFnDqP8rPCXi5YPHq6hqQ2jSJb6XM4qwbfwMqxP5qsFRFRBKMPnE3WiAhFsBkVcMv2rYX
